@@ -1,16 +1,13 @@
 // Initialize Firebase - https://firebase.google.com/docs/web/setup
-var firebaseConfig = {
+  var config = {
     apiKey: "AIzaSyD0w-dTYRHGDVFBTia2uIt6BMF5U-QQOms",
     authDomain: "helpbot-notification.firebaseapp.com",
     databaseURL: "https://helpbot-notification.firebaseio.com",
     projectId: "helpbot-notification",
     storageBucket: "helpbot-notification.appspot.com",
     messagingSenderId: "504252316075",
-    appId: "1:504252316075:web:2193c39df17dcc9bc67aee",
-    measurementId: "G-K13ZQBKTF3"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(config);
 const messaging = firebase.messaging();
 
 messaging.requestPermission()
